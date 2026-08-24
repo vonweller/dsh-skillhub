@@ -6,6 +6,8 @@ A DeepSeek Harness plugin that adds **Settings → Skill Market**. It browses th
 
 This is a **skill** store, not a Cordis plugin store. Installed skills are ordinary `SKILL.md` bundles. The official filesystem skill provider picks them up without a restart.
 
+![Settings → Skill Market browsing the skillhub.cn catalog](docs/skill-market.png)
+
 ## Install
 
 ```sh
@@ -47,6 +49,8 @@ MIT
 DeepSeek Harness 插件：在 **设置 → 技能市场** 浏览 [skillhub.cn](https://skillhub.cn/) 的技能库，并把选中的技能安装到 `~/.dsh/skills/<name>/SKILL.md`。
 
 这是 **技能** 市场，不是插件市场。已安装的技能由官方 `ctx.skills` 文件系统提供方自动发现，当前会话不用重启。
+
+![设置 → 技能市场，浏览 skillhub.cn 技能库](docs/skill-market.png)
 
 ```sh
 dsh plugin --profile web add github:vonweller/dsh-skillhub

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add a Settings screenshot to the README
+
 ## 0.1.0
 
 - Browse the public skillhub.cn catalog from Settings → Skill Market

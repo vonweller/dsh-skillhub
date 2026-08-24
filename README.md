@@ -53,3 +53,6 @@ dsh plugin --profile web add github:vonweller/dsh-skillhub
 ```
 
 重启 `dsh web`，打开设置左侧的 **技能市场**。
+
+Install from a commit SHA if you want a pinned review copy.
+

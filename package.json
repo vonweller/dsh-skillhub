@@ -1,0 +1,46 @@
+{
+  "name": "dsh-skillhub",
+  "version": "0.1.0",
+  "description": "Browse skillhub.cn skills and one-click install them into ~/.dsh/skills",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonweller/dsh-skillhub.git"
+  },
+  "homepage": "https://github.com/vonweller/dsh-skillhub#readme",
+  "bugs": {
+    "url": "https://github.com/vonweller/dsh-skillhub/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "skillhub",
+    "skills"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale"
+      ],
+      "platform": "web"
+    }
+  }
+}

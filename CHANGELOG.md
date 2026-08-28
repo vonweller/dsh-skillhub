@@ -2,7 +2,9 @@
 
 ## Unreleased
 
-- Add a Settings screenshot to the README
+## 0.1.1
+
+- Drop the removed `@deepseek-ai/dsh-client-runtime` client inject so the plugin composes on dsh 0.1.2
 
 ## 0.1.0
 

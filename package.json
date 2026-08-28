@@ -1,6 +1,6 @@
 {
   "name": "dsh-skillhub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browse skillhub.cn skills and one-click install them into ~/.dsh/skills",
   "type": "module",
   "main": "lib/index.js",
@@ -36,7 +36,6 @@
     },
     "client": {
       "inject": [
-        "@deepseek-ai/dsh-client-runtime",
         "@deepseek-ai/dsh-client-ui-slots",
         "@deepseek-ai/dsh-client-locale"
       ],

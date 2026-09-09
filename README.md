@@ -6,6 +6,8 @@ A DeepSeek Harness plugin that adds **Settings → Skill Market**. It browses th
 
 This is a **skill** store, not a Cordis plugin store. Installed skills are ordinary `SKILL.md` bundles. The official filesystem skill provider picks them up without a restart.
 
+Requires DeepSeek Harness **0.1.2 or later** (verified on 0.1.3).
+
 ![Settings → Skill Market browsing the skillhub.cn catalog](docs/skill-market.png)
 
 ## Install
@@ -15,6 +17,12 @@ dsh plugin --profile web add github:vonweller/dsh-skillhub
 ```
 
 Restart `dsh web`, then open **Settings → Skill Market**.
+
+Install from a commit SHA if you want a pinned review copy:
+
+```sh
+dsh plugin --profile web add github:vonweller/dsh-skillhub#<sha>
+```
 
 ## What it does
 
@@ -27,7 +35,7 @@ It does not dump the remote catalog into the model skill list.
 
 ## Optional config
 
-Override the row in the profile `cordis.patch.yml`:
+Override the row in the profile `cordis.patch.yml`. Invalid values fail plugin load:
 
 ```yaml
 - insert:
@@ -37,6 +45,8 @@ Override the row in the profile `cordis.patch.yml`:
         apiBase: https://api.skillhub.cn
         installDir: ~/.dsh/skills
 ```
+
+`apiBase` must be an absolute `http(s)` URL without credentials. `installDir` defaults to `$DSH_HOME/skills` (or `~/.dsh/skills`).
 
 ## License
 
@@ -50,6 +60,8 @@ DeepSeek Harness 插件：在 **设置 → 技能市场** 浏览 [skillhub.cn](h
 
 这是 **技能** 市场，不是插件市场。已安装的技能由官方 `ctx.skills` 文件系统提供方自动发现，当前会话不用重启。
 
+需要 DeepSeek Harness **0.1.2 或更高版本**（已在 0.1.3 上验证）。
+
 ![设置 → 技能市场，浏览 skillhub.cn 技能库](docs/skill-market.png)
 
 ```sh
@@ -57,6 +69,3 @@ dsh plugin --profile web add github:vonweller/dsh-skillhub
 ```
 
 重启 `dsh web`，打开设置左侧的 **技能市场**。
-
-Install from a commit SHA if you want a pinned review copy.
-

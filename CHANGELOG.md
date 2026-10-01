@@ -4,6 +4,9 @@
 
 ## 0.1.2
 
+- Support standard metadata localization (`locale/en.json`, `locale/zh.json`) for DSH Plugin Inventory and Plugin Manager display
+- Robust zip path normalization handling backslashes and directory traversal checks
+- Improve YAML frontmatter extraction and skill folder naming normalization for downloaded skills
 - Validate `apiBase` and `installDir` with a Standard Schema `Config` export so invalid rows fail plugin load
 - Register the Settings page with the current `settings.section` locale `t` seat
 - Use `--dsw-alias-*` tokens only (no hardcoded colors) so light and dark themes follow the web shell

@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased
+## 0.2.0
+
+- Integrated full MCP (Model Context Protocol) Server Management:
+  - Added "MCP Servers" tab in the unified SkillHub panel
+  - Discover and display both profile-configured and user-added MCP servers
+  - One-click toggle switch to enable/disable servers with real-time tool restriction for active agents
+  - Add and dynamically mount new stdio or streamable-http/SSE MCP servers without restarting
+  - Delete user-added MCP servers with automatic unmounting and state cleanup
+  - Atomic persistence in `~/.dsh/skillhub/mcp-servers.json`
+  - Added in-conversation Agent tools: `mcp_list`, `mcp_toggle`, `mcp_add`, `mcp_remove`
 
 ## 0.1.2
 

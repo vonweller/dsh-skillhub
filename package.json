@@ -1,7 +1,7 @@
 {
   "name": "dsh-skillhub",
-  "version": "0.1.2",
-  "description": "Browse skillhub.cn skills and one-click install them into ~/.dsh/skills",
+  "version": "0.2.0",
+  "description": "Browse skillhub.cn skills and manage external MCP servers",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

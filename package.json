@@ -1,6 +1,6 @@
 {
   "name": "dsh-skillhub",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Browse skillhub.cn skills and manage external MCP servers",
   "type": "module",
   "main": "lib/index.js",

@@ -26,7 +26,9 @@ dsh plugin --profile web add github:vonweller/dsh-skillhub#<sha>
 
 ## What it does
 
-- **Skill Market**: Pages the public skillhub.cn catalog (search, category, source, sort), preview SKILL.md, and one-click install/uninstall into `~/.dsh/skills`
+- **Skill Management**:
+  - Pages the public skillhub.cn catalog (search, category, source, sort), preview SKILL.md, and one-click install/uninstall into `~/.dsh/skills`
+  - Scans and manages installed skills across both `~/.dsh/skills` and global `~/.agents/skills` with location badges and search filtering
 - **MCP Server Management**:
   - Enumerate profile-configured and user-added MCP (Model Context Protocol) servers
   - View live tools provided by each MCP server (`mcp__<serverName>__*`)

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1
+
+- Display and manage global skills located in `~/.agents/skills` alongside DSH skills (`~/.dsh/skills`)
+- Add location badges (`Agents 全局` / `DSH 本地`) for installed skills
+- Add search filter box for installed skills tab
+- Improve multiline YAML description parsing for skills
+- Support local viewing, previewing, and uninstallation of global agent skills
+
 ## 0.2.0
 
 - Integrated full MCP (Model Context Protocol) Server Management:

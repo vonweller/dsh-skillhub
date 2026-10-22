@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.2
+
+- Fix 403 "untrusted origin" on install / uninstall / MCP actions in the desktop app:
+  the DSH GUI binds a fresh loopback port on every launch (and the desktop shell may
+  proxy requests via `dsh-app://app` or strip the Origin header), so the old strict
+  `Origin host === Host` check rejected legitimate same-user requests.
+  Now trusts: missing Origin, `dsh-app://app`, and any loopback origin
+  (`127.0.0.1` / `localhost` / `::1`, any port); cross-site origins are still rejected.
+- Export `sameOrigin` and add regression tests (`tests/sameorigin.test.js`)
 ## 0.2.1
 
 - Display and manage global skills located in `~/.agents/skills` alongside DSH skills (`~/.dsh/skills`)
